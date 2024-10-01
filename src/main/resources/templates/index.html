@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .category-title {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .img-size {
+            width: 200px;
+            height: auto;
+        }
+        .gradient-jumbotron {
+            background: linear-gradient(to right, crimson, #a9a9a9); /* Customize your gradient colors here */
+            color: white; /* Optional: change text color for better visibility */
+        }
+        .custom-nav-link {
+            color: #333; /* Change to your desired color */
+        }
+        .custom-nav-link:hover {
+            color: #555; /* Change on hover */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">
+        <img src="/images/bookstorebanner.png" alt="Bookstore Homepage" style="width: 200px; height: auto; vertical-align: middle; margin-right: 5px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="ml-auto d-flex align-items-center">
+        <a class="nav-link custom-nav-link custom-nav-link:hover" href="/profile">Profile<span class="sr-only">(current)</span></a>
+        <a href="/login" class="btn btn-primary">Login</a>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="jumbotron text-center gradient-jumbotron">
+    <h1 class="display-4">Bookstore Prototype</h1>
+    <p class="lead">Come buy some books!</p>
+    <div class="row justify-content-center">
+        <div class="mb-3 mx-5">
+            <img src="/images/bookstorebanner.png" alt="Logo" height="150" width="auto">
+        </div>
+    </div>
+</header>
+
+<!-- Search Bar -->
+<div class="container">
+    <form action="/search" method="GET" class="form-inline justify-content-center mb-4">
+        <input type="text" class="form-control mr-2" placeholder="Search for books..." name="query" required>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="text-center">
+        <h2>List of Best Sellers</h2>
+        <p>Check out our best-selling books!</p>
+    </div>
+
+    <div class="text-center category-title">
+        <h3>New Books</h3>
+        <p>Explore our latest arrivals.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <h4>Insert book image</h4>
+        </div>
+        <div class="col-md-4 text-center">
+            <h4>Insert book image</h4>
+        </div>
+        <div class="col-md-4 text-center">
+            <h4>Insert book image</h4>
+        </div>
+    </div>
+
+    <div class="text-center category-title">
+        <h3>Categories</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <h4>Horror</h4>
+        </div>
+        <div class="col-md-4 text-center">
+            <h4>Sci-Fi</h4>
+        </div>
+        <div class="col-md-4 text-center">
+            <h4>Nonfiction</h4>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 Bookstore. All rights reserved.</p>
+</footer>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Main Page<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
