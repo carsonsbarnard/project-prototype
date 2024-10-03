@@ -26,4 +26,32 @@ public class ControllerClass {
     public String profile() {
         return "profile";
     }
+    @GetMapping("/vieworder")
+    public String vieworder() {
+        return "vieworder";
+    }
+    @GetMapping("/unbroken")
+    public String unbroken() {
+        return "unbroken";
+    }
+    @GetMapping("/review")
+    public String review() {
+        return "review";
+    }
+    @GetMapping("/checkout")
+    public String checkout() {
+        return "checkout";
+    }
+    @GetMapping("/reviewsubmitted")
+    public String reviewsubmitted() {
+        return "reviewsubmitted";
+    }
+    @GetMapping("/thanksforyourorder")
+    public String thanksforyourorder() {
+        return "thanksforyourorder";
+    }
+    @GetMapping("/orderinfo")
+    public String orderinfo() {
+        return "orderinfo";
+    }
 }
