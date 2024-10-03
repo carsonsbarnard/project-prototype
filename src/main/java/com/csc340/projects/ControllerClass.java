@@ -58,4 +58,20 @@ public class ControllerClass {
     public String editprofile() {
         return "editprofile";
     }
+    @GetMapping("/register")
+    public String register() {
+        return "register";
+    }
+    @GetMapping("/publisher-login")
+    public String publisherlogin() {
+        return "publisher-login";
+    }
+    @GetMapping("/publisher-submit-book")
+    public String publishersubmitbook() {
+        return "publisher-submit-book";
+    }
+    @GetMapping("/publisher-dashboard")
+    public String publisherdashboard() {
+        return "publisher-dashboard";
+    }
 }
