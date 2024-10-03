@@ -54,4 +54,8 @@ public class ControllerClass {
     public String orderinfo() {
         return "orderinfo";
     }
+    @GetMapping("/editprofile")
+    public String editprofile() {
+        return "editprofile";
+    }
 }
