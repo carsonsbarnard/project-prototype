@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Order - Bookstore</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    .book-title {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .book-description {
+      margin: 10px 0;
+    }
+    .btn-custom {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+    <img src="/images/bookstorebanner.png" alt="Bookstore Homepage" style="width: 200px; height: auto; vertical-align: middle; margin-right: 5px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="ml-auto d-flex align-items-center">
+    <a class="nav-link" href="/profile">Profile</a>
+    <a class="nav-link" href="/vieworder">View Order</a>
+    <a href="/login" class="btn btn-primary">Login</a>
+  </div>
+</nav>
+
+<!-- View Order Section -->
+<div class="container">
+  <h2>Your Order</h2>
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <img src="/images/unbroken.jpg" alt="Unbroken Book Cover" class="img-fluid" style="width: 200px; height: auto;">
+    </div>
+    <div class="col-md-6">
+      <div class="book-title">UNBROKEN</div>
+      <p class="book-description"><strong>Author:</strong> Laura Hillenbrand</p>
+      <p class="book-description"><strong>Description:</strong> Unbroken is an extraordinary story of survival, resilience, and redemption. This biography chronicles the life of Louis Zamperini.</p>
+      <p class="book-description"><strong>Price:</strong> $19.99</p>
+      <a href="/checkout" class="btn btn-success btn-custom">Go to Checkout</a>
+      <a href="/" class="btn btn-secondary btn-custom">Continue Shopping</a> <!-- Back to homepage -->
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Bookstore. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
